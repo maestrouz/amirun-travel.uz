@@ -977,6 +977,21 @@ address {
   
 }
 
+@media screen and (max-width: 768px) {
+  .container{
+    .card-pay{
+      width: 60%;
+      margin-top: 5%;
+      margin-left: 20%;
+    }
+    .card-pay1{
+      width: 30%;
+      margin-top: 5%;
+      margin-left: 35%;
+    }
+  }
+}
+
 .card-pay{
   width: 200px;
   cursor: pointer;
