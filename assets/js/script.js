@@ -70,3 +70,27 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+let toastBox = document.getElementById('toastBox');
+let successMsg = '<i class="fa-solid fa-circle-check fa-2xs" style="color: #1ce33d;"></i> Отправлено';
+
+
+function showToast(msg) {
+  let toast = document.createElement('div');
+  toast.classList.add('toast');
+  toast.innerHTML = msg;
+  toastBox.appendChild(toast);
+
+  // Automatically hide toast after 3 seconds
+  setTimeout(() => {
+    toast.remove();
+  }, 2000);
+}
+
+function hideToast() {
+  // Remove all toast messages
+  let toasts = toastBox.getElementsByClassName('toast');
+  while (toasts.length > 0) {
+    toasts[0].remove();
+  }
+}

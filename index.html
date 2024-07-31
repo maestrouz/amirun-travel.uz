@@ -18,6 +18,7 @@
     - favicon
   -->
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- 
     - custom css
@@ -406,11 +407,12 @@
                           <input class="inp-numb" type="tel" placeholder="Ваш номер телефона">
                         </div>
                         <div class="modal-footer">
-                          <button class="send-btn" >Оставить заявку и оплатить</button>
+                          <button onclick="showToast(successMsg)" class="send-btn" >Оставить заявку и оплатить</button>
                         </div>
                       </div>
+                      <div id="toastBox">
+                      </div>
                     </div>
-                    <!-- <button class="btn btn-secondary">бронировать</button> -->
                   </div>
                 </div>
               </li>
@@ -473,8 +475,10 @@
                           <input class="inp-numb" type="tel" placeholder="Ваш номер телефона">
                         </div>
                         <div class="modal-footer">
-                          <button class="send-btn" >Оставить заявку и оплатить</button>
+                          <button onclick="showToast(successMsg)" class="send-btn" >Оставить заявку и оплатить</button>
                         </div>
+                      </div>
+                      <div id="toastBox">
                       </div>
                     </div>
                     <!-- <button class="btn btn-secondary">бронировать</button> -->

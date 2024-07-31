@@ -1326,17 +1326,6 @@ address {
   display: none;
 }
 
-/* #myBtn {
-  color: var(--white);
-  text-transform: uppercase;
-  font-size: var(--fs-5);
-  border-radius: 100px;
-  padding: var(--padding, 8px 18px);
-  border: var(--border-width, 2px) solid transparent;
-  transition: var(--transition);
-
-} */
-
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -1460,4 +1449,35 @@ address {
   color: #fff;
   font-size: 18px;
   margin-left: 30%;
+}
+
+#toastBox{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+}
+.toast{
+  width: 180px;
+  height: 40px;
+  background: #fff;
+  font-weight: 500;
+  margin: 15px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.fa-solid{
+  position: absolute;
+  left: 25px;
+  font-size: 25px;
 }
