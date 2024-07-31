@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Продажа онлайн авиабилетов! Более 1000 авиакомпаний ✓ Удобный поиск ✓ Самые дешевые авиабилеты ✓"
+    />
+    <meta
+      name="keywords"
+      content="авиабилеты, билеты на самолет, дешевые авиабилеты, aviabileti, купить авиабилеты, купить авиабилеты дешево, купить билет на самолет, дешёвые авиабилеты, очень дешевые авиабилеты"
+    />
+    <title translate="no">Amirun Travel</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo2.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-top">
+        <div class="container">
+          <a href="tel:+998903174302" class="helpline-box">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <div class="wrapper"></div>
+          </a>
+
+          <a href="#" class="logo">
+            <img src="./assets/img/logo2.png" alt="Tourly logo" />
+          </a>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="#" class="logo">
+                <img src="./assets/img/amirun logo.png" alt="logo" />
+              </a>
+
+              <button
+                class="nav-close-btn"
+                aria-label="Close Menu"
+                data-nav-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>Главная</a>
+              </li>
+
+              <li>
+                <a href="#" class="navbar-link" data-nav-link>о нас </a>
+              </li>
+
+              <li>
+                <a href="#package" class="navbar-link" data-nav-link
+                  >Тур пакеты</a
+                >
+              </li>
+
+              <li>
+                <a href="#gallery" class="navbar-link" data-nav-link>галерея</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="translate" id="google_translate_element"></div>
+
+          <!-- <button id="book_now" class="btn btn-primary">Book Now</button> -->
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero" id="home">
+          <div class="container">
+            <h1 translate="no" class="motto">Amirun Travel</h1>
+            <h2 translate="no" class="h1 hero-title">Halollik va Ezgulik</h2>
+
+            <!-- <p class="hero-text">
+            Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos
+            voluptatibus habitant?
+            Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.
+          </p> -->
+
+            <!-- <div class="btn-group">
+              <button class="btn btn-primary">Learn more</button>
+
+              <button class="btn btn-secondary">Book now</button>
+            </div> -->
+          </div>
+        </section>
+
+        <!-- 
+        - #TOUR SEARCH
+      -->
+
+        <section class="tour-search">
+          <div class="container">
+            <form action="" class="tour-search-form">
+              <div class="input-wrapper">
+                <label for="destination" class="input-label"></label>
+
+                <input
+                  type="text"
+                  name="destination"
+                  id="destination"
+                  required
+                  placeholder="Откуда"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="destination" class="input-label"></label>
+
+                <input
+                  type="text"
+                  name="destination"
+                  id="destination"
+                  required
+                  placeholder="Куда"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="people" class="input-label"></label>
+
+                <input
+                  type="number"
+                  name="people"
+                  id="people"
+                  required
+                  placeholder="Пассажир"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="checkin" class="input-label">Дата начала </label>
+
+                <input
+                  type="date"
+                  name="checkin"
+                  id="checkin"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="checkout" class="input-label"
+                  >Дата окончания
+                </label>
+
+                <input
+                  type="date"
+                  name="checkout"
+                  id="checkout"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-secondary">Поиск</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- 
+        - #POPULAR
+      -->
+
+        <section class="popular" id="destination">
+          <div class="container">
+            <h2 class="h2 section-title">Популярное направление</h2>
+
+            <p class="section-text">
+              Похоже, что некоторые люди здесь хотят распространить информацию,
+              только первые, а не никто, составляют внешний вид хвалителей.
+              Пусть это будет украшением стойкости: считается, что они в хорошей
+              форме.
+            </p>
+
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img src="./assets/img/Makkah.jpg" alt="" loading="lazy" />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">Saudi Arabia</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Makkah</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Мы представили для вас пакеты «стандарт», «комфорт»,
+                      «люкс» и «премиум».
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/img/abu_dhabi.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">Dubai</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Abu Dhabi</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Возможность совершить поездку по всемирно известным
+                      небоскребам арабского мира.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/img/thailand.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">Thailand</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Phuket</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Теперь для вас Пхукет, известный миру своими
+                      привлекательными островами.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a href="./assets/pages/404page.html">
+              <button class="btn btn-primary">Больше направлений</button>
+            </a>
+          </div>
+        </section>
+
+        <!-- 
+        - #PACKAGE
+      -->
+
+        <section class="package" id="package">
+          <div class="container">
+            <p class="section-subtitle">ПОПУЛЯРНЫЕ ПАКЕТЫ</p>
+
+            <h2 class="h2 section-title">Ознакомьтесь с нашими пакетами</h2>
+
+            <ul class="package-list">
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/img/Makkah2.jpg"
+                      alt="Experience The Great Holiday On Beach"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">УМРА ПАЛОМНИЧЕСТВО</h3>
+
+                    <p class="card-text">
+                      Умра – это период, который включает в себя возможность
+                      каждому паломнику обновить и очистить свою жизнь.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">7 д</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box"></div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">Makkah</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <p class="price">
+                      12 600 000
+                      <span>/ Quad</span>
+                    </p>
+
+                    <button class="btn btn-secondary">бронировать</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/img/dubai.jpg"
+                      alt="Summer Holiday To The Oxolotan River"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      ГОРЯЩИЕ ТУРЫ В АБУ-ДАБИ, ЛУЧШИЕ ЦЕНЫ НА РЫНКЕ!
+                    </h3>
+
+                    <p class="card-text">
+                      Представляем Вашему вниманию лучшие предложения по
+                      маршруту Абу-Даби с прямыми рейсами из Ташкента!
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">8 д</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box"></div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">Abu Dhabi</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <p class="price">
+                      4 989 600
+                      <span>/ на одного человека</span>
+                    </p>
+
+                    <button class="btn btn-secondary">бронировать</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/img/czech.jpg"
+                      alt="Santorini Island's Weekend Vacation"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      AMIRUN TRAVEL ПРЕДЛАГАЕТ НЕЗАБЫВАЕМЫЕ ПОЕЗДКИ В ЧЕХИЮ
+                    </h3>
+
+                    <p class="card-text">
+                      Чехия – одно из самых популярных туристических направлений
+                      в Европе. Эта страна имеет многовековую богатую историю,
+                      древние традиции и множество интересных памятников.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">7 д</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box"></div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">Prague</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card-price">
+                    <p class="price">
+                      7 812 000
+                      <span>/ на одного человека</span>
+                    </p>
+
+                    <button class="btn btn-secondary">бронировать</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a href="./assets/pages/packages.html">
+              <button class="btn btn-primary">Посмотреть все пакеты</button>
+            </a>
+          </div>
+        </section>
+
+        <!-- 
+        - #GALLERY
+      -->
+
+        <section class="gallery" id="gallery">
+          <div class="container">
+            <p class="section-subtitle">Фото галерея</p>
+
+            <h2 class="h2 section-title">ФОТО ОТ ПУТЕШЕСТВЕННИКОВ</h2>
+
+            <ul class="gallery-list">
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-1.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-2.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-3.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-4.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-5.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CTA
+      -->
+
+        <section class="cta" id="contact">
+          <div class="container">
+            <img class="card-pay" src="./assets/img/payme.png" alt="payme">
+            <img class="card-pay" src="./assets/img/click.png" alt="click">
+            <img class="card-pay1" src="./assets/img/uzcard.png" alt="uzcard">
+            <img class="card-pay" src="./assets/img/humo.png" alt="humo">
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img src="./assets/img/amirun logo.png" alt="logo" />
+            </a>
+            <h3 class="footer-dott">
+              Halollik <br />
+              va
+              <br />
+              Ezgulik
+            </h3>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="contact-title">Связаться с нами</h4>
+            <ul>
+              <li class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <a href="tel:+998951500000" class="contact-link"
+                  >+99890 317 43 02</a
+                >
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <a href="mailto:nemo.avia@mail.ru" class="contact-link"
+                  >amirun-travel@mail.ru</a
+                >
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>
+                  Город Ташкент, Чиланзар 19-кв, улица Ал-Хорезми 5
+                </address>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-form">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.757013513381!2d69.19083198734505!3d41.2706262360195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae898aabea36cb%3A0x2485d1a068a1061b!2z0YPQu9C40YbQsCDQkNC7LdCl0L7RgNC10LfQvNC4IDUsIDEwMDE1Mywg0KLQsNGI0LrQtdC90YIsIFRhc2hrZW50LCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1722287676000!5m2!1sru!2s"
+              width="400"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">Copyright © 2024 Amirun Travel</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+    <script src="./assets/js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./assets/js/script2.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>
