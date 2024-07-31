@@ -678,7 +678,7 @@ body {
 
 .cta {
   background: var(--bright-navy-blue);
-  padding-block: var(--section-padding);
+  padding-block: 4%;
 }
 
 .cta :is(.section-subtitle, .section-title, .section-text) {
@@ -992,6 +992,12 @@ address {
   }
 }
 
+.pay{
+  font-size: 40px;
+  margin-top: -4%;
+  text-align: center;
+}
+
 .card-pay{
   width: 200px;
   cursor: pointer;
@@ -1253,6 +1259,14 @@ address {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .footer{
+    .footer-dott{
+      margin-left: 0%;
+    }
+  }
+}
+
 .footer-dott{
   margin-top: 5%;
   text-align: center;
@@ -1270,6 +1284,7 @@ address {
   .container {
     max-width: 1180px;
   }
+
 }
 
 .VIpgJd-ZVi9od-l4eHX-hSRGPd {
