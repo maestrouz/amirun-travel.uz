@@ -39,8 +39,8 @@
   --radius-25: 25px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 body {
   overflow-x: hidden;
@@ -387,7 +387,7 @@ body {
   /* margin-bottom: 20px; */
 }
 
-.motto{
+.motto {
   color: #fff;
   font-family: "Playwrite HR", cursive;
   font-size: 80px;
@@ -974,17 +974,16 @@ address {
   .footer-bottom-list {
     justify-content: flex-end;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
-  .container{
-    .card-pay{
+  .container {
+    .card-pay {
       width: 60%;
       margin-top: 5%;
       margin-left: 20%;
     }
-    .card-pay1{
+    .card-pay1 {
       width: 30%;
       margin-top: 5%;
       margin-left: 35%;
@@ -992,20 +991,19 @@ address {
   }
 }
 
-.pay{
+.pay {
   font-size: 40px;
   margin-top: -4%;
   text-align: center;
 }
 
-.card-pay{
+.card-pay {
   width: 200px;
   cursor: pointer;
 }
-.card-pay1{
+.card-pay1 {
   width: 100px;
   cursor: pointer;
-
 }
 
 @media (min-width: 768px) {
@@ -1132,7 +1130,7 @@ address {
 }
 
 @media screen and (max-width: 740px) {
-  .translate{
+  .translate {
     display: flex;
   }
 }
@@ -1194,7 +1192,6 @@ address {
 
   .header.active .navbar-link {
     color: #fff;
-    ;
   }
 
   .header.active .navbar-link:is(:hover, :focus) {
@@ -1260,14 +1257,14 @@ address {
 }
 
 @media screen and (max-width: 768px) {
-  .footer{
-    .footer-dott{
+  .footer {
+    .footer-dott {
       margin-left: 0%;
     }
   }
 }
 
-.footer-dott{
+.footer-dott {
   margin-top: 5%;
   text-align: center;
   align-items: center;
@@ -1284,7 +1281,6 @@ address {
   .container {
     max-width: 1180px;
   }
-
 }
 
 .VIpgJd-ZVi9od-l4eHX-hSRGPd {
@@ -1328,4 +1324,140 @@ address {
 }
 .VIpgJd-ZVi9od-ORHb-OEVmcd {
   display: none;
+}
+
+/* #myBtn {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: var(--fs-5);
+  border-radius: 100px;
+  padding: var(--padding, 8px 18px);
+  border: var(--border-width, 2px) solid transparent;
+  transition: var(--transition);
+
+} */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 0;
+  border: 5px solid #142029;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.order {
+  color: #000;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+}
+
+.inp-name {
+  margin-top: 1%;
+  margin-left: 15%;
+  width: 70%;
+  height: 50px;
+  border: 3px solid #35547d;
+  border-radius: 10px;
+  font-size: 24px;
+  text-transform: capitalize;
+  outline: none;
+  padding-left: 5px;
+  
+}
+.inp-numb {
+  margin-top: 2%;
+  margin-left: 15%;
+  width: 70%;
+  height: 50px;
+  border: 3px solid #35547d;
+  border-radius: 10px;
+  font-size: 24px;
+  text-transform: capitalize;
+  outline: none;
+  padding-left: 5px;
+}
+
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #35547d;
+  color: white;
+}
+
+.modal-body {
+  padding: 10px;
+  height: 140px;
+  padding: 2px 16px;
+  display: block;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+.send-btn{
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #588cd0;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 30%;
 }
